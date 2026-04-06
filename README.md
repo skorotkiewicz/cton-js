@@ -1,6 +1,6 @@
 # CTON
 
-[![npm version](https://badge.fury.io/js/cton.svg)](https://www.npmjs.com/package/cton)
+[![npm version](https://badge.fury.io/js/cton.svg)](https://www.npmjs.com/package/cton-js)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/skorotkiewicz/cton-js/blob/master/LICENSE)
 
 CTON (Compact Token-Oriented Notation) is a token-efficient, JSON-compatible wire format built for LLM prompts. It keeps structure explicit (objects, arrays, table arrays) while removing syntactic noise, so prompts are shorter and outputs are easier to validate. CTON is deterministic and round-trippable, making it safe for LLM workflows.
