@@ -1,0 +1,53 @@
+{
+  "name": "cton",
+  "version": "1.0.0",
+  "description": "CTON (Compact Token-Oriented Notation) - A token-efficient, JSON-compatible wire format built for LLM prompts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cton": "dist/bin/cton.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist docs",
+    "prepublishOnly": "npm run clean && npm run build",
+    "docs": "typedoc --entryPoints src/index.ts --out docs",
+    "fmt": "biome format --write .",
+    "lint": "biome lint --write .",
+    "check": "biome check --write ."
+  },
+  "keywords": [
+    "cton",
+    "json",
+    "serialization",
+    "llm",
+    "compact",
+    "notation",
+    "format",
+    "wire-format"
+  ],
+  "author": "Sebastian Korotkiewicz",
+  "license": "MIT",
+  "homepage": "https://github.com/skorotkiewicz/cton-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skorotkiewicz/cton-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skorotkiewicz/cton-js/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@types/node": "^20.0.0",
+    "typedoc": "^0.28.18",
+    "typescript": "^5.0.0"
+  }
+}
