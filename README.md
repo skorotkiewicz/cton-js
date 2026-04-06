@@ -12,7 +12,7 @@ CTON (Compact Token-Oriented Notation) is a token-efficient, JSON-compatible wir
 ## Quickstart
 
 ```bash
-npm install cton
+npm install cton-js
 ```
 
 ```javascript
