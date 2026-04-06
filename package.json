@@ -1,6 +1,6 @@
 {
   "name": "cton-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CTON (Compact Token-Oriented Notation) - A token-efficient, JSON-compatible wire format built for LLM prompts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
