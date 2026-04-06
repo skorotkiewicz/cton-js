@@ -16,7 +16,7 @@ npm install cton
 ```
 
 ```javascript
-const Cton = require('cton');
+const Cton = require('cton-js');
 
 const payload = {
   user: { id: 42, name: "Ada" },
@@ -107,7 +107,7 @@ CTON: team[2]{id,name}=1,Ada;2,Lin
 CTON ships with a schema DSL for validation inside your LLM pipeline.
 
 ```javascript
-import * as Cton from 'cton';
+import * as Cton from 'cton-js';
 
 const schema = Cton.schema(b => b.object({}, builder => {
   builder.key("user", b.object({}, userBuilder => {
@@ -130,7 +130,7 @@ Handle newline-delimited CTON streams efficiently:
 
 ```javascript
 import * as fs from 'node:fs';
-import * as Cton from 'cton';
+import * as Cton from 'cton-js';
 
 // Reading stream
 const readable = fs.createReadStream('events.cton', { encoding: 'utf-8' });
@@ -151,7 +151,7 @@ Cton.dumpStream(events, writable);
 CTON-B is an optional binary envelope for compact transport (with optional compression):
 
 ```javascript
-import * as Cton from 'cton';
+import * as Cton from 'cton-js';
 
 const binary = Cton.dumpBinary(payload);
 const roundTrip = Cton.loadBinary(binary);
@@ -270,7 +270,7 @@ Decode from CTON-B (binary) format.
 Register a custom type handler.
 
 ```javascript
-import * as Cton from 'cton';
+import * as Cton from 'cton-js';
 
 class Money {
   constructor(cents, currency) {
